@@ -9,6 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func add(sender: AnyObject) {
+        var temp=0
+        temp=(Int)(x.text!)!+(Int)(y.text!)!
+        z.text="\(temp)"
+    }
+    @IBOutlet weak var z: UITextField!
+    @IBOutlet weak var y: UITextField!
+    @IBOutlet weak var x: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
