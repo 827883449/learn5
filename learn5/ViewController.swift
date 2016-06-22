@@ -9,6 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func chu(sender: AnyObject) {
+        var temp=0
+        temp=(Int)(x.text!)!/(Int)(y.text!)!
+        z.text="\(temp)"
+    }
+    @IBAction func cheng(sender: AnyObject) {
+        var temp=0
+        temp=(Int)(x.text!)!*(Int)(y.text!)!
+        z.text="\(temp)"
+    }
+    @IBAction func jian(sender: AnyObject) {
+        var temp=0
+        temp=(Int)(x.text!)!-(Int)(y.text!)!
+        z.text="\(temp)"
+    }
     @IBAction func add(sender: AnyObject) {
         var temp=0
         temp=(Int)(x.text!)!+(Int)(y.text!)!
